@@ -1,16 +1,17 @@
-# user_lister_mobile_app
+## Kullanıcı Listesi Uygulaması
 
-A new Flutter project.
+Bu uygulama, kullanıcıların listelendiği, arama yapılabildiği ve kullanıcı detaylarının gösterildiği bir Flutter uygulamasıdır. Uygulamada HTTP istekleri için `http` kütüphanesi ve durum yönetimi için `cubit` paketi kullanılmıştır.
 
-## Getting Started
+## Özellikler
 
-This project is a starting point for a Flutter application.
+- Kullanıcıları listeleyen ana ekran.
+- Kullanıcıları adlarına göre aramaya yarayan search işlevi.
+- Kullanıcı detaylarının gösterildiği pop up.
+  
+## Performans Optimizasyonu
 
-A few resources to get you started if this is your first Flutter project:
+-Search ,list ve detail özellikleri için performans sağlaması açısından sadece bir kere api isteği yapılmaktadır. O istek sonucunda iki adet aynı tip model emit edilmektedir. Bunun sebebi search işleminin ardından yapılan clear işlemi sonrası, verilerin apiye istek atılmadan çekilmesini sağlamaktır. Böylece, aynı verilere tekrar tekrar istek atılmadan hızlı bir şekilde kullanıcılar arasında gezinebilirsiniz. Bu sayede hem backendi yormamış oluruz hem de bekleme süresi oluşturmamış oluruz.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Bellek ve diğer sistem kaynaklarının verimli bir şekilde kullanılmasını sağlamak için http kütüphanesi Singleton bir sınıf olarak oluşturuldu.
+  
+- Textler static const olarak kullanılmıştır. Bu sayede textler uygulama başlatıldığında bir kere oluşturulup bellekte tutulurlar , tekrar tekrar oluşturma maliyeti ortadan kalkar ve performans artar.
