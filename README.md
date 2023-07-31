@@ -15,3 +15,5 @@ Bu uygulama, kullanıcıların listelendiği, arama yapılabildiği ve kullanıc
 -Bellek ve diğer sistem kaynaklarının verimli bir şekilde kullanılmasını sağlamak için http kütüphanesi Singleton bir sınıf olarak oluşturuldu.
   
 -Textler static const olarak kullanılmıştır. Bu sayede textler uygulama başlatıldığında bir kere oluşturulup bellekte tutulurlar , tekrar tekrar oluşturma maliyeti ortadan kalkar ve performans artar.
+
+Not: Name değişkeninin altındaki değişkenin ismi belirtilmediği için eklenememiştir.
