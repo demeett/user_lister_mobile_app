@@ -1,6 +1,6 @@
 ## Kullanıcı Listesi Uygulaması
 
-Bu uygulama, kullanıcıların listelendiği, arama yapılabildiği ve kullanıcı detaylarının gösterildiği bir Flutter uygulamasıdır. Uygulamada HTTP istekleri için `http` kütüphanesi ve durum yönetimi için `cubit` paketi kullanılmıştır.
+Bu uygulama, kullanıcıların listelendiği, arama yapılabildiği ve kullanıcı detaylarının gösterildiği bir Flutter uygulamasıdır. Uygulamada HTTP istekleri için `http` kütüphanesi ve durum yönetimi için `flutter_bloc` paketi kullanılmıştır.
 
 ## Özellikler
 
