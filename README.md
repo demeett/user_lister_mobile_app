@@ -16,4 +16,3 @@ Bu uygulama, kullanıcıların listelendiği, arama yapılabildiği ve kullanıc
   
 -Textler static const olarak kullanılmıştır. Bu sayede textler uygulama başlatıldığında bir kere oluşturulup bellekte tutulurlar , tekrar tekrar oluşturma maliyeti ortadan kalkar ve performans artar.
 
-Not: Name değişkeninin altındaki değişkenin ismi belirtilmediği için eklenememiştir.
